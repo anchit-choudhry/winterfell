@@ -1,5 +1,13 @@
 # Getting Started with Create React App and Redux
 
+[![Node.js CI](https://github.com/anchit-choudhry/winterfell/actions/workflows/node.js.yml/badge.svg)](https://github.com/anchit-choudhry/winterfell/actions/workflows/node.js.yml)
+[![CodeQL](https://github.com/anchit-choudhry/winterfell/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/anchit-choudhry/winterfell/actions/workflows/github-code-scanning/codeql)
+[![DevSkim](https://github.com/anchit-choudhry/winterfell/actions/workflows/devskim.yml/badge.svg)](https://github.com/anchit-choudhry/winterfell/actions/workflows/devskim.yml)
+[![ESLint](https://github.com/anchit-choudhry/winterfell/actions/workflows/eslint.yml/badge.svg)](https://github.com/anchit-choudhry/winterfell/actions/workflows/eslint.yml)
+[![Lint Code Base](https://github.com/anchit-choudhry/winterfell/actions/workflows/super-linter.yml/badge.svg)](https://github.com/anchit-choudhry/winterfell/actions/workflows/super-linter.yml)
+[![Dependency Review](https://github.com/anchit-choudhry/winterfell/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/anchit-choudhry/winterfell/actions/workflows/dependency-review.yml)
+[![njsscan sarif](https://github.com/anchit-choudhry/winterfell/actions/workflows/njsscan.yml/badge.svg)](https://github.com/anchit-choudhry/winterfell/actions/workflows/njsscan.yml)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
