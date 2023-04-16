@@ -1,6 +1,7 @@
 {
   "name": "@winterfell/ui",
   "version": "0.1.0",
+  "license": "SEE LICENSE IN LICENSE",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.21.4",
@@ -12,7 +13,7 @@
     "@emotion/styled": "^11.10.6",
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.11.16",
+    "@mui/material": "^5.12.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@reduxjs/toolkit": "^1.8.1",
     "@svgr/webpack": "^7.0.0",
@@ -37,7 +38,7 @@
     "eslint-webpack-plugin": "^4.0.0",
     "file-loader": "^6.2.0",
     "fs-extra": "^11.1.1",
-    "html-webpack-plugin": "^5.5.0",
+    "html-webpack-plugin": "^5.5.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
@@ -58,7 +59,7 @@
     "react-redux": "^8.0.1",
     "react-refresh": "^0.14.0",
     "react-router-dom": "^6.10.0",
-    "resolve": "^1.20.0",
+    "resolve": "^1.22.3",
     "resolve-url-loader": "^5.0.0",
     "sass-loader": "^13.2.2",
     "semver": "^7.3.5",
@@ -66,7 +67,7 @@
     "tailwindcss": "^3.0.2",
     "terser-webpack-plugin": "^5.2.5",
     "web-vitals": "^3.3.1",
-    "webpack": "^5.64.4",
+    "webpack": "^5.79.0",
     "webpack-manifest-plugin": "^5.0.0",
     "workbox-webpack-plugin": "^6.4.1"
   },
@@ -74,10 +75,10 @@
     "@babel/cli": "^7.21.0",
     "dotenv": "^16.0.3",
     "dotenv-expand": "^10.0.0",
-    "flow-bin": "^0.203.1",
+    "flow-bin": "^0.204.0",
     "source-map-explorer": "^2.5.3",
     "style-loader": "^3.3.1",
-    "webpack-dev-server": "^4.6.0"
+    "webpack-dev-server": "^4.13.3"
   },
   "resolutions": {},
   "scripts": {

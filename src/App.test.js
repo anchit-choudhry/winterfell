@@ -1,15 +1,15 @@
 import React from 'react';
-import { Provider } from 'react-redux';
+import { Provider as ReduxProvider } from 'react-redux';
 import { expect, test } from '@jest/globals';
 import { render, screen } from '@testing-library/react';
-import { store } from './app/store';
+import { store } from './store/store';
 import App from './App';
 
 test('renders learn react link', () => {
   render(
-    <Provider store={store}>
+    <ReduxProvider store={store}>
       <App />
-    </Provider>,
+    </ReduxProvider>,
   );
 
   expect(screen.getByText(/learn/i)).toBeInTheDocument();
