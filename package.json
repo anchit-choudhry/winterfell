@@ -76,8 +76,12 @@
     "dotenv": "^16.0.3",
     "dotenv-expand": "^10.0.0",
     "flow-bin": "^0.204.0",
+    "postcss-styled-syntax": "^0.4.0",
     "source-map-explorer": "^2.5.3",
     "style-loader": "^3.3.1",
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard": "^32.0.0",
+    "typescript": "^5.0.4",
     "webpack-dev-server": "^4.13.3"
   },
   "resolutions": {},
@@ -85,16 +89,17 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "flow:server": "flow",
     "babel:compile": "NODE_ENV=development BABEL_ENV=development babel ./src -d ./lib",
-    "lint": "NODE_ENV=production BABEL_ENV=production eslint ./src",
-    "lint:fix": "yarn lint --fix",
+    "lint:css": "stylelint \"./src/*.{css,js}\"",
+    "lint:js": "NODE_ENV=production BABEL_ENV=production eslint ./src",
+    "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
     "prettier:fix": "prettier --config .prettierrc.js ./src --write",
-    "start": "NODE_ENV=development BABEL_ENV=development node scripts/start",
+    "start": "node scripts/start",
     "build": "node scripts/build",
     "test": "node scripts/test",
     "test:ci": "CI=true yarn test",
     "test:coverage": "yarn test --coverage",
     "test:ci-coverage": "CI=true yarn test:coverage",
-    "run:all": "yarn lint:fix && yarn prettier:fix && yarn test:ci-coverage && yarn babel:compile && yarn build"
+    "run:all": "yarn babel:compile && yarn lint:fix && yarn prettier:fix && yarn test:ci-coverage && yarn build"
   },
   "eslintConfig": {
     "extends": [
