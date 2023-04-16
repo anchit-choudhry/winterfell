@@ -89,7 +89,7 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "flow:server": "flow",
     "babel:compile": "NODE_ENV=development BABEL_ENV=development babel ./src -d ./lib",
-    "lint:css": "stylelint \"./src/*.{css,js}\"",
+    "lint:css": "stylelint \"./src/**/*.{css,js}\"",
     "lint:js": "NODE_ENV=production BABEL_ENV=production eslint ./src",
     "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
     "prettier:fix": "prettier --config .prettierrc.js ./src --write",
