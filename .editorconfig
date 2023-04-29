@@ -14,7 +14,10 @@ trim_trailing_whitespace = true
 max_line_length=off
 trim_trailing_whitespace = false
 
-[package.json,*.yml]
+[*.yml]
+max_line_length = off
+
+[package.json]
 max_line_length = off
 
 [COMMIT_EDITMSG]
