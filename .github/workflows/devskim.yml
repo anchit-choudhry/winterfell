@@ -11,6 +11,7 @@ on:
   pull_request:
     branches: ["main"]
   schedule:
+    # At 01:29 on Friday
     - cron: '29 1 * * 5'
 
 jobs:

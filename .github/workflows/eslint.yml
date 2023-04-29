@@ -16,6 +16,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: ["main"]
   schedule:
+    # At 01:44 on Sunday
     - cron: '44 1 * * 0'
 
 jobs:

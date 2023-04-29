@@ -16,6 +16,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: ["main"]
   schedule:
+    # At 09:37 on Wednesday
     - cron: '37 9 * * 3'
 
 permissions:
