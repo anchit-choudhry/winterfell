@@ -3,11 +3,28 @@
   "version": "0.1.0",
   "license": "SEE LICENSE IN LICENSE",
   "private": true,
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "flow:server": "flow",
+    "babel:compile": "NODE_ENV=development BABEL_ENV=development babel ./src -d ./lib",
+    "lint:css": "stylelint \"./src/**/*.{css,js}\"",
+    "lint:js": "NODE_ENV=production BABEL_ENV=production eslint ./src",
+    "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
+    "prettier:fix": "prettier --config .prettierrc.js ./src --write",
+    "start": "node scripts/start",
+    "build": "node scripts/build",
+    "test": "node scripts/test",
+    "test:ci": "CI=true yarn test",
+    "test:coverage": "yarn test --coverage",
+    "test:ci-coverage": "CI=true yarn test:coverage",
+    "run:all": "yarn babel:compile && yarn lint:fix && yarn prettier:fix && yarn test:ci-coverage && yarn build"
+  },
   "dependencies": {
     "@babel/core": "^7.21.5",
     "@babel/plugin-syntax-flow": "^7.21.4",
     "@babel/plugin-transform-react-jsx": "^7.21.5",
     "@babel/preset-flow": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
     "@babel/runtime": "^7.21.5",
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
@@ -85,22 +102,6 @@
     "webpack-dev-server": "^4.13.3"
   },
   "resolutions": {},
-  "scripts": {
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "flow:server": "flow",
-    "babel:compile": "NODE_ENV=development BABEL_ENV=development babel ./src -d ./lib",
-    "lint:css": "stylelint \"./src/**/*.{css,js}\"",
-    "lint:js": "NODE_ENV=production BABEL_ENV=production eslint ./src",
-    "lint:fix": "yarn lint:js --fix && yarn lint:css --fix",
-    "prettier:fix": "prettier --config .prettierrc.js ./src --write",
-    "start": "node scripts/start",
-    "build": "node scripts/build",
-    "test": "node scripts/test",
-    "test:ci": "CI=true yarn test",
-    "test:coverage": "yarn test --coverage",
-    "test:ci-coverage": "CI=true yarn test:coverage",
-    "run:all": "yarn babel:compile && yarn lint:fix && yarn prettier:fix && yarn test:ci-coverage && yarn build"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -202,8 +203,9 @@
   },
   "babel": {
     "presets": [
-      "react-app",
-      "@babel/preset-flow"
+      "@babel/preset-flow",
+      "@babel/preset-react",
+      "react-app"
     ]
   }
 }
