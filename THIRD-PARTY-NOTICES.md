@@ -5895,7 +5895,7 @@ IN THE SOFTWARE.
 
 -----
 
-The following software may be included in this product: cosmiconfig. A copy of the source code may be downloaded from git+https://github.com/davidtheclark/cosmiconfig.git. This software contains the following license and notice below:
+The following software may be included in this product: cosmiconfig. A copy of the source code may be downloaded from git+https://github.com/cosmiconfig/cosmiconfig.git. This software contains the following license and notice below:
 
 The MIT License (MIT)
 
