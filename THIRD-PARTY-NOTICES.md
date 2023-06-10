@@ -5401,7 +5401,7 @@ ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 -----
 
-The following software may be included in this product: clsx, escalade, klona. A copy of the source code may be downloaded from https://github.com/lukeed/clsx.git (clsx), https://github.com/lukeed/escalade.git (escalade), https://github.com/lukeed/klona.git (klona). This software contains the following license and notice below:
+The following software may be included in this product: clsx, escalade. A copy of the source code may be downloaded from https://github.com/lukeed/clsx.git (clsx), https://github.com/lukeed/escalade.git (escalade). This software contains the following license and notice below:
 
 MIT License
 
@@ -5895,7 +5895,7 @@ IN THE SOFTWARE.
 
 -----
 
-The following software may be included in this product: cosmiconfig. A copy of the source code may be downloaded from git+https://github.com/cosmiconfig/cosmiconfig.git. This software contains the following license and notice below:
+The following software may be included in this product: cosmiconfig. A copy of the source code may be downloaded from git+https://github.com/davidtheclark/cosmiconfig.git. This software contains the following license and notice below:
 
 The MIT License (MIT)
 
