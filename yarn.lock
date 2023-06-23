@@ -383,7 +383,6 @@
   integrity sha512-SOSkfJDddaM7mak6cPEpswyTRnuRltl429hMraQEglW+OkovnCzsiszTmsrlY//qLFjCpQDFRvjdm2wA5pPm9w==
 
 "@babel/plugin-proposal-private-property-in-object@npm:@babel/plugin-transform-private-property-in-object@^7.22.5", "@babel/plugin-transform-private-property-in-object@^7.22.5":
-  name "@babel/plugin-proposal-private-property-in-object"
   version "7.22.5"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-private-property-in-object/-/plugin-transform-private-property-in-object-7.22.5.tgz#07a77f28cbb251546a43d175a1dda4cf3ef83e32"
   integrity sha512-/9xnaTTJcVoBtSSmrVyhtSvO3kbqS2ODoh2juEU72c3aYonNF0OMGiaz2gjukyKM2wBBYJP38S4JiE0Wfb5VMQ==
